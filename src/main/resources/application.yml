@@ -1,0 +1,16 @@
+server:
+   port: 9090
+   
+custom:
+   jwt:
+     subject: auth
+     issuer: amdocs
+     secrete: abcd
+     ttlMillis: 3600000
+   kafka:
+     bootstrapAddress: http://localhost:3452/
+     updatetopic: xyz
+     deletetopic: pqr
+   userprofileService:
+     url: http://localhost:9091/profile
+     
